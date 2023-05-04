@@ -1,0 +1,344 @@
+{% load static %}
+<html>
+<head>
+  <title>GRABit</title> 
+  <link rel=" icon" href="{% static '/favicon.png' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static '/css/styl.css' %}">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo"><a href="#">GRABit</a></div>
+    <div class="menu">
+      <a href="#">
+        <ion-icon name="close" class="close"></ion-icon>
+      </a>
+
+      <ul>
+        <li><a href="#" class="under">HOME</a></li>
+        <li><a href="#" class="under">SHOP</a></li>
+        <li><a href="#" class="under">OUR PRODUCTS</a></li>
+        <li><a href="#" class="under">CONTACT US</a></li>
+        <li><a href="#" class="under">ABOUT US</a></li>
+      </ul>
+    </div>
+
+    <div class="search">
+
+      
+    
+    <!-- <div id="nav-search">
+      <div id="nav-bar-left"></div>
+      <form id="nav-search-bar-form" accept-charset="utf-8" action="/s/ref=nb_sb_noss" class="nav-searchbar nav-progressive-attribute" method="GET" name="site-search" role="search">
+    
+        <div class="nav-left">
+          <div id="nav-search-dropdown-card">
+            
+      <div class="nav-search-scope nav-sprite">
+        <div class="nav-search-facade" data-value="search-alias=aps">
+          <span id="nav-search-label-id" class="nav-search-label nav-progressive-content" style="width: auto;">All</span>
+          <i class="nav-icon"></i>
+        </div> -->
+        <label id="searchDropdownDescription" for="searchDropdownBox" class="nav-progressive-attribute" style="display:none">Select the department you want to search in</label>
+        <select aria-describedby="searchDropdownDescription" class="nav-search-dropdown searchSelect nav-progressive-attrubute nav-progressive-search-dropdown" data-nav-digest="w7gN2hWqLHIWif1JKvtnyz+U5zk=" data-nav-selected="0" id="searchDropdownBox" name="url" style="display: block; top: 2.5px;" tabindex="0" title="Search in">
+            <option selected="selected" value="search-alias=aps">All Categories</option>
+           
+            <option value="search-alias=appliances">Appliances</option>
+            <option value="search-alias=mobile-apps">Apps &amp; Games</option>
+            <option value="search-alias=baby">Baby</option>
+            <option value="search-alias=beauty">Beauty</option>
+            <option value="search-alias=stripbooks">Books</option>
+            <option value="search-alias=automotive">Car &amp; Motorbike</option>
+            <option value="search-alias=apparel">Clothing &amp; Accessories</option>
+            <option value="search-alias=collectibles">Collectibles</option>
+            <option value="search-alias=computers">Computers &amp; Accessories</option>
+            <option value="search-alias=todays-deals">Deals</option>
+            <option value="search-alias=electronics">Electronics</option>
+            <option value="search-alias=furniture">Furniture</option>
+            <option value="search-alias=lawngarden">Garden &amp; Outdoors</option>
+            <option value="search-alias=gift-cards">Gift Cards</option>
+            <option value="search-alias=grocery">Grocery &amp; Gourmet Foods</option>
+            <option value="search-alias=hpc">Health &amp; Personal Care</option>
+            <option value="search-alias=kitchen">Home &amp; Kitchen</option>
+            <option value="search-alias=industrial">Industrial &amp; Scientific</option>
+            <option value="search-alias=jewelry">Jewellery</option>
+            <option value="search-alias=digital-text">Kindle Store</option>
+            <option value="search-alias=luggage">Luggage &amp; Bags</option>
+            <option value="search-alias=luxury-beauty">Luxury Beauty</option>
+            <option value="search-alias=dvd">Movies &amp; TV Shows</option>
+            <option value="search-alias=popular">Music</option>
+            <option value="search-alias=mi">Musical Instruments</option>
+            <option value="search-alias=office-products">Office Products</option>
+            <option value="search-alias=pets">Pet Supplies</option>
+            <option value="search-alias=instant-video">Prime Video</option>
+            <option value="search-alias=shoes">Shoes &amp; Handbags</option>
+            <option value="search-alias=software">Software</option>
+            <option value="search-alias=sporting">Sports, Fitness &amp; Outdoors</option>
+            <option value="search-alias=specialty-aps-sns">Subscribe &amp; Save</option>
+            <option value="search-alias=home-improvement">Tools &amp; Home Improvement</option>
+            <option value="search-alias=toys">Toys &amp; Games</option>
+            <option value="search-alias=under-ten-dollars">Under ₹500</option>
+            <option value="search-alias=videogames">Video Games</option>
+            <option value="search-alias=watches">Watches</option>
+        </select>
+        
+      <input type="text" placeholder="search products" id="input">
+      <ion-icon class="s" name="search"></ion-icon>
+      <!-- </div>
+    
+          </div>
+        </div> -->
+        <!-- <div class="nav-fill">
+          <div class="nav-search-field ">
+            <label for="twotabsearchtextbox" style="display: none;">Search Amazon.in</label>
+            <input type="text" id="twotabsearchtextbox" value="amazon&amp;" name="field-keywords" autocomplete="off" placeholder="Search Amazon.in" class="nav-input nav-progressive-attribute" dir="auto" tabindex="0" aria-label="Search Amazon.in" spellcheck="false" fdprocessedid="hvcl8h">
+          </div>
+          <div id="nav-iss-attach"></div>
+        </div>
+        <div class="nav-right">
+          <div class="nav-search-submit nav-sprite">
+            <span id="nav-search-submit-text" class="nav-search-submit-text nav-sprite nav-progressive-attribute" aria-label="Go">
+              <input id="nav-search-submit-button" type="submit" class="nav-input nav-progressive-attribute" value="Go" tabindex="0" fdprocessedid="ypfosg">
+            </span>
+          </div>
+        </div>
+      </form>
+    </div></div> -->
+    <div class="heading">
+      <ul>
+        <li><a href="#" class="under">HOME</a></li>
+        <li><a href="#" class="under">SHOP</a></li>
+        <li><a href="#" class="under">OUR PRODUCTS</a></li>
+        <li><a href="#" class="under">CONTACT US</a></li>
+        <li><a href="#" class="under">ABOUT US</a></li>
+      </ul>
+      
+    </div>
+    
+    <div class="heading1">
+      <div class="heading">
+      <ion-icon name="menu" class="ham"></ion-icon>
+      
+    </div>
+
+  </header>
+  <section >
+    <div class="name">
+    <div class="heading" >
+    <ul>
+        <li><a href="#" class="under">all</a></li>
+        <li><a href="#" class="under">sell</a></li>
+        <li><a href="#" class="under">best seller</a></li>
+        <li><a href="#" class="under">todays deals</a></li>
+        <li><a href="#" class="under">customer services</a></li>
+        <li><a href="#" class="under">new releases</a></li>
+        <li><a href="#" class="under">sell</a></li>
+        <li><a href="#" class="under">home & kitchen</a></li>
+        <li><a href="#" class="under">electronics</a></li>
+      </ul></div></div>
+    <div class="section">
+      <div class="section1">
+        <div class="img-slider">
+          <img src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+          <img src="https://images.pexels.com/photos/3962294/pexels-photo-3962294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+          <img src="https://images.pexels.com/photos/2292953/pexels-photo-2292953.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img">
+          <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+          <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+        </div>
+
+      </div>
+      
+      <div class="section2">
+        <div class="container">
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">SHOES</div>
+            <div class="price">$5</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+          </div>
+          <div class="items">
+            <div class="img img2"><img src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+            <div class="name">MEN's T-SHIRT</div>
+            <div class="price">$6.34</div>
+            <div class="info">Lorem ipsum dolor sit.</div>
+          </div>
+          <div class="items">
+            <div class="img img3"><img src="https://media.istockphoto.com/photos/folded-blue-jeans-on-a-white-background-modern-casual-clothing-flat-picture-id1281304280" alt=""></div>
+            <div class="name">JEANS</div>
+            <div class="price">$9</div>
+            <div class="info">Lorem ipsum dolor sit amet.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><a href="https://www.amazon.in"><img src="https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" href="www.amezon.in
+              "></a></div>
+            <div class="name" >WATCH</div>
+            <div class="price">$9.1</div>
+             
+            <div class="info">Lorem ipsum dolor sit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/6858618/pexels-photo-6858618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">SMART PHONE</div>
+            <div class="price">$20</div>
+            <div class="info">Lorem ipsum dolor sit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">TELEVISION</div>
+            <div class="price">$18</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/4295985/pexels-photo-4295985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+            <div class="name">HOODIES</div>
+            <div class="price">$6.7</div>
+            <div class="info">Lorem ipsum dolor sit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://media.istockphoto.com/photos/vintage-plates-with-silver-teaspoons-picture-id184363070" alt=""></div>
+            <div class="name">DINNER SET</div>
+            <div class="price">$10</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/6463348/pexels-photo-6463348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+            <div class="name">BLANKETS</div>
+            <div class="price">$9.9</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+            <div class="name">LAPTOP</div>
+            <div class="price">$99</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://media.istockphoto.com/photos/modern-kitchen-microwave-oven-picture-id1144960519" alt=""></div>
+            <div class="name">MICROWAVE</div>
+            <div class="price">$30</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://media.istockphoto.com/photos/black-coffee-maker-with-green-led-lights-picture-id177395430" alt=""></div>
+            <div class="name">COFFEE MAKER</div>
+            <div class="price">$29.7</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+            <div class="name">BED</div>
+            <div class="price">$100</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://media.istockphoto.com/photos/woman-turning-on-air-conditioner-picture-id1325708905" alt=""></div>
+            <div class="name">AIR CONDITIONER</div>
+            <div class="price">$78</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">BOOK</div>
+            <div class="price">$9</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/4339598/pexels-photo-4339598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$36.5</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://media.istockphoto.com/photos/hand-of-a-lady-selecting-yellow-colored-saree-in-a-shop-picture-id1301740530" alt=""></div>
+            <div class="name">SAREES</div>
+            <div class="price">$25.6</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">WASHING MACHINE</div>
+            <div class="price">$56</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <div class="footer0">
+      <h1>GRABit</h1>
+    </div>
+    <div class="footer1 ">
+      Connect with us at<div class="social-media">
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="footer2">
+      <div class="product">
+        <div class="heading">Products</div>
+        <div class="div">Sell your Products</div>
+        <div class="div">Advertise</div>
+        <div class="div">Pricing</div>
+        <div class="div">Product Buisness</div>
+
+      </div>
+      <div class="services">
+        <div class="heading">Services</div>
+        <div class="div">Return</div>
+        <div class="div">Cash Back</div>
+        <div class="div">Affiliate Marketing</div>
+        <div class="div">Others</div>
+      </div>
+      <div class="Company">
+        <div class="heading">Company</div>
+        <div class="div">Complaint</div>
+        <div class="div">Careers</div>
+        <div class="div">Affiliate Marketing</div>
+        <div class="div">Support</div>
+      </div>
+      <div class="Get Help">
+        <div class="heading">Get Help</div>
+        <div class="div">Help Center</div>
+        <div class="div">Privacy Policy</div>
+        <div class="div">Terms</div>
+        <div class="div">Login</div>
+      </div>
+    </div>
+    <div class="footer3">Copyright © <h4>GRABit BY CHANDAN</h4> 2023</div>
+  </footer>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+<!-- <center>
+<h1>Home Page</h1>
+
+Firstname : {{request.session.Firstname}}
+<br>
+Lastname : {{request.session.Lastname}}
+<br>
+Email : {{request.session.Email}}
+</center> -->
