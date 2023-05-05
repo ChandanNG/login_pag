@@ -26,6 +26,7 @@ SECRET_KEY = "django-insecure-h032w#v=(izx(cr42#cp3#1jxu=l6xis!bcwtbu^7#-+*imong
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+STATIC_ROOT = os.path.join(BASE_DIR,"static")
 
 
 # Application definition
